@@ -27,7 +27,8 @@ yum -y install jenkins
 
 echo Abilito e Starto il servizio Jenkins
 systemctl start jenkins.service
-systemctl enable jenkins.service
+#systemctl enable jenkins.service
+systemctl is-enabled jenkins.service || systemctl enabled jenkins.service
 
 echo Imposto regola Firewall per porta 8080
 firewall-cmd --zone=public --permanent --add-port=8080/tcp
