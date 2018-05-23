@@ -18,10 +18,11 @@ echo Inserisco le variabili JAVA_HOME e JRE_HOME
 echo 'export JAVA_HOME=/usr/lib/jvm/jre-1.8.0-openjdk' | sudo tee -a /etc/profile
 echo 'export JRE_HOME=/usr/lib/jvm/jre' | sudo tee -a /etc/profile
 source /etc/profile
+echo $JAVA_HOME
+echo $JRE_HOME
 
 echo Scarico ed Installo Jenkins
-cd ~ 
-wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+curl -o /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
 rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
 yum -y install jenkins
 
