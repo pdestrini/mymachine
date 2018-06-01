@@ -35,5 +35,5 @@ Prima Versione
 Paolo Destrini
 
 # Acknowledgments
-Eugenio Marzo
-Manuel Felici
+* Eugenio Marzo
+* Manuel Felici
