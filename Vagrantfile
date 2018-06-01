@@ -9,9 +9,10 @@ Vagrant.configure("2") do |config|
   # The most common configuration options are documented and commented below.
   # For a complete reference, please see the online documentation at
   # https://docs.vagrantup.com.
-
-  config.vm.provider "virtualbox" do |v|
-    v.name = "mymachine"
+  ##config.vm.define "mymachine" do |mymachine|
+    config.vm.provider "virtualbox" do |v|
+      v.name = "mymachine"
+  ##  end
   end
 
   # Every Vagrant development environment requires a box. You can search for
