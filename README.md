@@ -48,5 +48,5 @@ License
 #
 
 Acknowledgments
-Eugenio Marzo!
-Manuel Felici!
+Eugenio Marzo
+Manuel Felici
